@@ -374,7 +374,7 @@ footer .credit a {
     .hero,
     .skills,
     .contact-form {
-        min-height: 100vh;
+        min-height: 70vh;
     }
 
     .about .row {
