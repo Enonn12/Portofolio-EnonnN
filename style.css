@@ -371,14 +371,12 @@ footer .credit a {
     }
 
     .about,
+    .hero,
     .skills,
     .contact-form {
         min-height: 70vh;
     }
 
-    .hero {
-        min-height: 50vh;
-    }
 
     .about .row {
         flex-wrap: wrap;
