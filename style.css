@@ -218,6 +218,7 @@ body {
 .skill-item img {
     width: 200px;
     height: auto;
+    mix-blend-mod: color-burn;
     filter: drop-shadow(2px 2px 20px black);
 }
 
