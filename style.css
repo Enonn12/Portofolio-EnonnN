@@ -218,6 +218,7 @@ body {
 .skill-item img {
     width: 200px;
     height: auto;
+    filter: drop-shadow(2px 2px 20px black);
 }
 
 /* skills section end */
