@@ -136,7 +136,7 @@ body {
 /* about section start */
 .about {
     min-height: 100vh;
-    padding: 6rem 7% 1.4rem;
+    padding: 6rem 7% 0.5rem;
 }
 
 .about h2 {
