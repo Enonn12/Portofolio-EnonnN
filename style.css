@@ -172,6 +172,11 @@ body {
     filter: drop-shadow(2px 2px 20px black);
 }
 
+.about .row .about-img img:hover {
+    transform: scale(1.5);
+    transition: 2s;
+}
+
 .about .row .content {
     flex: 1;
     padding: 0;
