@@ -14,3 +14,19 @@ document.addEventListener('click', function(e) {
         navbarNav.classList.remove('active');
     }
 })
+
+// animasi scroll
+document.addEventListener('DOMContentLoaded', function () {
+    let observer = new IntersectionObserver(function (entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, { threshold: 0.2 }); // Memicu animasi ketika 20% elemen terlihat
+
+    let sections = document.querySelectorAll('.about, .skills, .contact-form');
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
