@@ -32,7 +32,6 @@ body {
     align-items: center;
     padding: 1.4rem 5%;
     background-color: rgb(1, 1, 1 0.8);
-    border-bottom: 1px solid black;
     position: fixed;
     top: 0;
     left: 0;
@@ -41,7 +40,8 @@ body {
 }
 
 .navbar .navbar-logo {
-    font-size: 1.5rem;
+    flex-grow: 1;
+    font-size: 1.3rem;
     font-weight: 700;
     color: red;
     font-family: 'Tiny5', sans-serif;
@@ -56,8 +56,8 @@ body {
     color: black;
     display: inline-block;
     font-family: 'Tiny5', sans-serif;
-    font-size: 1.2rem;
-    margin: 0 1rem;
+    font-size: 1.3rem;
+    margin: 0 2rem;
 }
 
 .navbar .navbar-nav a:hover {
