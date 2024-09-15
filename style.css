@@ -284,10 +284,10 @@ html, body {
     height: auto;
 }
 
-.skill-item img:hover {
+/* .skill-item img:hover {
     transform: scale(1.5);
     transition: 2s;
-}
+} */
 
 /* skills section end */
 
