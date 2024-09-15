@@ -14,14 +14,41 @@
     text-decoration: none;
 }
 
-html {
-    scroll-behavior: smooth;
-}
 
-body {
+html, body {
     font-family: 'poppins', sans-serif;
     background-color: #fff;
     color: black;
+    scroll-behavior: smooth;
+}
+
+/* animasi background */
+.stars, .twinkling {
+    position: fixed; /* Memastikan background bintang tetap pada posisinya saat scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Supaya bintang berada di belakang konten lain */
+    background-repeat: repeat; /* Pola bintang berulang */
+    background-size: contain; /* Mengatur ukuran bintang */
+}
+
+/* Background bintang statis */
+.stars {
+    background: url('https://www.transparenttextures.com/patterns/white-dots.png') repeat;
+}
+
+/* Background bintang berkedip dengan animasi */
+.twinkling {
+    background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+    animation: move-twink-back 100s linear infinite;
+}
+
+/* Animasi bergerak untuk efek kedipan bintang */
+@keyframes move-twink-back {
+    from {background-position: 0 0;}
+    to {background-position: -10000px 5000px;}
 }
 
 
@@ -466,6 +493,31 @@ footer .credit a {
 /* Mobile phone */
 @media (max-width:400px) {
     html {
-        font-size: 55%;
+        font-size: 50%;
+    }
+
+    .navbar .navbar-logo {
+        font-size: 1rem;
+    }
+
+    .hero .content h2 {
+        font-size: 3rem;
+    }
+
+    .about .about-img img {
+        width: 80%;
+    }
+
+    .skill-item img {
+        width: 80px;
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
     }
 }
