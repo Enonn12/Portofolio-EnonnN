@@ -24,6 +24,101 @@ html, body {
     scroll-behavior: smooth;
 }
 
+/* mode gelap dan terang  */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 1em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    border: 2px solid #adb5bd;
+    transition: .4s;
+    border-radius: 10px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 0.9em;
+    width: 0.9em;
+    border-radius: 10px;
+    left: 0.1em;
+    bottom: 0.1em;
+    background-color: #adb5bd;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #007bff;
+}
+
+input:checked+.slider:before {
+    transform: translateX(1em);
+    background-color: #fff;
+}
+
+/* dark mode */
+/* Gaya untuk mode gelap */
+body.dark-mode {
+    background-color: #010101;
+    color: white;
+}
+
+body.dark-mode .navbar {
+    background-color: #010101;
+}
+
+body.dark-mode .navbar .navbar-nav a {
+    color: white;
+}
+
+body.dark-mode .hero .content h1,
+body.dark-mode .hero .content h2,
+body.dark-mode .hero .content h3 {
+    color: white;
+}
+
+body.dark-mode .contact-form {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode .contact-form input[type="text"],
+body.dark-mode .contact-form input[type="email"],
+body.dark-mode .contact-form textarea {
+    background-color: #444;
+    color: white;
+}
+
+body.dark-mode footer {
+    background-color: #010101;
+    color: white;
+}
+
+
 /* animasi background */
 .stars, .twinkling {
     position: fixed; /* Memastikan background bintang tetap pada posisinya saat scroll */
