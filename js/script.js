@@ -30,3 +30,26 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(section);
     });
 });
+
+
+// script mode gelap dan terang..
+document.addEventListener('DOMContentLoaded', function () {
+    const themeSwitch = document.getElementById('theme-switch');
+    const body = document.body;
+
+    // Cek jika pengguna sudah memilih mode sebelumnya
+    if (localStorage.getItem('theme') === 'dark') {
+        body.classList.add('dark-mode');
+        themeSwitch.checked = true;
+    }
+
+    themeSwitch.addEventListener('change', function () {
+        if (this.checked) {
+            body.classList.add('dark-mode');
+            localStorage.setItem('theme', 'dark'); // Simpan preferensi pengguna
+        } else {
+            body.classList.remove('dark-mode');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+});
