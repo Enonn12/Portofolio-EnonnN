@@ -33,7 +33,6 @@ html, body {
     height: 1em;
 }
 
-/* Hide default HTML checkbox */
 .switch input {
     opacity: 0;
     width: 0;
@@ -49,7 +48,7 @@ html, body {
     right: 0;
     bottom: 0;
     background-color: #fff;
-    border: 2px solid #adb5bd;
+    border: 3px solid #adb5bd;
     transition: .4s;
     border-radius: 10px;
 }
@@ -57,11 +56,12 @@ html, body {
 .slider:before {
     position: absolute;
     content: "";
-    height: 0.9em;
-    width: 0.9em;
-    border-radius: 10px;
-    left: 0.1em;
-    bottom: 0.1em;
+    height: 0.6em;
+    width: 0.6em;
+    border-radius: 4px;
+    left: 0.4px;
+    top: 1px;
+    bottom: 0.5px;
     background-color: #adb5bd;
     transition: .4s;
 }
@@ -92,7 +92,7 @@ body.dark-mode .navbar {
 }
 
 body.dark-mode .navbar .navbar-nav a {
-    color: black;
+    color: white;
 }
 
 body.dark-mode .navbar .navbar-extra a {
