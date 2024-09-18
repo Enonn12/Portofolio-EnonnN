@@ -92,7 +92,7 @@ body.dark-mode .navbar {
 }
 
 body.dark-mode .navbar .navbar-nav a {
-    color: white;
+    color: red;
 }
 
 body.dark-mode .navbar .navbar-extra a {
