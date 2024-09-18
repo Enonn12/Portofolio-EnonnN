@@ -105,6 +105,21 @@ body.dark-mode .hero .content h3 {
     color: white;
 }
 
+body.dark-mode .hero .content h1 span,
+body.dark-mode .hero .content h2 span,
+body.dark-mode .hero .content h3 span {
+    color: red;
+}
+
+body.dark-mode .about h2 span {
+    color: red;
+}
+
+body.dark-mode .skills h2 span {
+    color: red;
+}
+
+
 body.dark-mode .contact-form {
     background-color: #333;
     color: white;
